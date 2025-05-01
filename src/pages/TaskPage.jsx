@@ -30,7 +30,7 @@ function TaskPage() {
 
   return (
     <div>
-      <div>Dados da Tarefa com id {id}</div>
+      <div>Dados da Tarefa com id: {id}</div>
       <div>Título: {task.title}</div>
       <div>Descrição: {task.description}</div>
       <div>Prioridade: {task.priority}</div>
