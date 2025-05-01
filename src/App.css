@@ -71,7 +71,7 @@ main{
   align-items: center;
 }
 
-.users{
+.tasks{
   display: flex;
   flex-direction: column;
 }

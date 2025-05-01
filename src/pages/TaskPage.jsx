@@ -34,17 +34,18 @@ function TaskPage() {
       <div>Título: {task.title}</div>
       <div>Descrição: {task.description}</div>
       <div>Prioridade: {task.priority}</div>
-      <div>Concluída: 
-      <input type="checkbox" checked={task.done} disable/>
-        </div>
+      <div>Concluída:
+        <input type="checkbox" checked={task.done} disable />
+      </div>
       <button onClick={eliminarTask}>Eliminar</button>
       <Link to={`/editar/${id}`}>
         <button>Editar</button>
-        </Link>
-      <br/>
+      </Link>
+      <br />
+      <br />
       <Link to={`/list`}>
         <button>Voltar</button>
-        </Link>
+      </Link>
     </div>
   )
 }

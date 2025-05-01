@@ -2,7 +2,9 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <a href="https://github.com/WiCardos/Cinel-React-Tarefa-Final">GitHub deste projeto</a>
+    </div>
   )
 }
 
