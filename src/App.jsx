@@ -9,6 +9,7 @@ import UserPage from './pages/UserPage'
 import UsersPage from './pages/UsersPage'
 import ListPage from './pages/ListPage'
 import NavBar from './components/NavBar'
+import TaskPage from './pages/TaskPage'
 
 function App() {
 
@@ -26,8 +27,8 @@ function App() {
           <Route path="/edit-user/:userId" element={<EditUserPage />} />
 
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/editar/" element={<TasksPage />} /> */}
-          {/* <Route path="/editar/:id" element={<TaskPage />} /> */}
+          <Route path="/tasks/:id" element={<TaskPage />} />
+          {/* <Route path="/editar/:id" element={<EditTaskPage />} /> */}
           <Route path="/list" element={<ListPage />} />
           <Route path="/nova" element={<CreateTaskPage />} />
           <Route path="/about" element={<AboutPage />} />

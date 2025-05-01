@@ -23,7 +23,6 @@ function ListPage() {
     <div className='tasks'>
       <h3>Todas as Tasks! </h3>
 
-      {/* {tasks.map(task => ( */}
         <table>
           <tr>
             <th>Título</th>
@@ -34,7 +33,7 @@ function ListPage() {
           
           {tasks.map(task => (
           <tr>
-            <td><Link key={task.id} to={task.id}>
+            <td><Link key={task.id} to={`/tasks/${task.id}`}>
               {task.title}
             </Link></td>
             <td>{task.description}</td>
@@ -45,7 +44,6 @@ function ListPage() {
           </tr>
           ))}
         </table>
-       {/* ))} */}
 
     </div>
   )
