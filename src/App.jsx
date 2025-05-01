@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import CreateUserPage from './pages/CreateUserPage'
+import CreateTaskPage from './pages/CreateTaskPage'
 import EditUserPage from './pages/EditUserPage'
 import HomePage from './pages/HomePage'
 import UserPage from './pages/UserPage'
@@ -25,9 +26,10 @@ function App() {
           <Route path="/edit-user/:userId" element={<EditUserPage />} />
 
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/nova" element={<Create />} /> */}
-          {/* <Route path="/editar/:id" element={<Create />} /> */}
+          {/* <Route path="/editar/" element={<TasksPage />} /> */}
+          {/* <Route path="/editar/:id" element={<TaskPage />} /> */}
           <Route path="/list" element={<ListPage />} />
+          <Route path="/nova" element={<CreateTaskPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<h3>404!</h3>} />
 

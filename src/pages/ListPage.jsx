@@ -26,10 +26,10 @@ function ListPage() {
       {/* {tasks.map(task => ( */}
         <table>
           <tr>
-            <th>Titulo</th>
+            <th>Título</th>
             <th>Descrição</th>
             <th>Prioridade</th>
-            <th>Concluida</th>
+            <th>Concluída</th>
           </tr>
           
           {tasks.map(task => (
